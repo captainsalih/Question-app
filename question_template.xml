@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/head1"
+            android:padding="@dimen/dimen_10dp"
+            android:textSize="25sp"
+            />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dimen_300dp"
+            android:layout_weight="0.009"
+            android:src="@drawable/pic2"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/thequestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:text="question"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="fill_horizontal"
+            android:layout_margin="@dimen/dimen_25dp">
+
+            <RadioButton
+                android:id="@+id/answer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="answer1"
+                android:layout_margin="@dimen/dimen_2dp"/>
+
+            <RadioButton
+                android:id="@+id/answer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="answer2"
+                android:layout_margin="@dimen/dimen_2dp"/>
+
+            <RadioButton
+                android:id="@+id/answer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="answer3"
+                android:layout_margin="@dimen/dimen_3dp"/>
+
+            <RadioButton
+                android:id="@+id/answer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_3dp"
+                android:text="I dont know"/>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/green"
+            android:padding="@dimen/dimen_10dp"
+            android:text="SUBMIT"
+            android:layout_gravity="center"
+            android:background="@drawable/button_shape"/>
+
+</LinearLayout>
